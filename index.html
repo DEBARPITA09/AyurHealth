@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AyurHealth - Ayurvedic Wellness Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AyurHealth</h1>
+            <p>Ancient Wisdom for Modern Wellness</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#dosha-quiz">Dosha Quiz</a></li>
+                <li><a href="#diet">Diet Guide</a></li>
+                <li><a href="#remedies">Herbal Remedies</a></li>
+                <li><a href="#yoga">Yoga</a></li>
+                <li><a href="#about">About Ayurveda</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="home" class="hero">
+            <h2>Discover Your Ayurvedic Constitution</h2>
+            <p>Ayurveda, the 5,000-year-old healing system from India, teaches that each person has a unique mind-body type called a Dosha. Understanding your Dosha can help you make better choices for your health and wellbeing.</p>
+            <button id="startQuizBtn" class="cta-button">Take the Dosha Quiz</button>
+        </section>
+
+        <section id="dosha-quiz" class="hidden">
+            <h2>Discover Your Dosha</h2>
+            <div class="quiz-container">
+                <div id="quiz-progress">
+                    <div class="progress-bar"></div>
+                    <p>Question <span id="current-question">1</span> of <span id="total-questions">10</span></p>
+                </div>
+                <div id="quiz-question"></div>
+                <div id="quiz-options"></div>
+                <button id="next-question" class="cta-button">Next</button>
+            </div>
+        </section>
+
+        <section id="quiz-result" class="hidden">
+            <h2>Your Ayurvedic Constitution</h2>
+            <div id="result-content"></div>
+            <button id="retake-quiz" class="cta-button">Retake Quiz</button>
+        </section>
+
+        <section id="diet" class="info-section hidden">
+            <h2>Diet Recommendations</h2>
+            <div id="diet-content"></div>
+        </section>
+
+        <section id="remedies" class="info-section hidden">
+            <h2>Herbal Remedies</h2>
+            <div id="remedies-content"></div>
+        </section>
+
+        <section id="yoga" class="info-section hidden">
+            <h2>Yoga Practices</h2>
+            <div id="yoga-content"></div>
+        </section>
+
+        <section id="daily-tip">
+            <h2>Daily Ayurvedic Tip</h2>
+            <div id="tip-container">
+                <p id="daily-tip-text">Loading tip...</p>
+                <button id="new-tip-btn" class="cta-button">Get Another Tip</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 AyurHealth. This is for educational purposes only.</p>
+            <p>Consult an Ayurvedic practitioner for personalized advice.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
